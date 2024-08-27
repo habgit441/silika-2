@@ -106,4 +106,8 @@
   .menu-toggle {
     display: block;
   }
+
+  .get-started-button{
+    display: none;
+  }
 }

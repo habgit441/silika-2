@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa'; // Import the icons correctly
 import './App.css';
-import { FaBars, FaTimes } from 'react-icons/fa';
-import 
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +13,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <nav className={`navbar ${isOpen ? 'active' : ''}`}>
-          <img src={""}/>
+          <div className="logo">
+         logo
+          </div>
           <div className="menu-toggle" onClick={toggleNavbar}>
             {isOpen ? <FaTimes /> : <FaBars />}
           </div>
