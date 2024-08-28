@@ -1,18 +1,29 @@
 import React from 'react';
+import './About.css'
+import video from '../Asset/Images/Group.svg';
 
 const About = () => {
   return (
     <header className="About">
-        <h1>About us</h1>
-        <div className="video">
-            <section className='about-text'>
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. A saepe blanditiis maiores? Doloremque nobis voluptas ea doloribus expedita ipsa, inventore non labore sunt eius ad tenetur quis earum dolorem aliquam!</h2>
-            <button>Watch Video</button>
-            </section>
-           <section className='img'>
-
-           </section>
+      <div className='us'>
+        <h1>more About us</h1>
+      </div>
+      <div className='silika'>
+        <div className="abouttext">
+          <h2>professional & team  <br/> choose copy.ai</h2>
+          <p>Odio dictum lacus augue nulla sit integer facilisis massa. Nec et tellus eu amet. Faucibus sit sit massa ullamcorper </p>
         </div>
+        <div className="">
+          <img src={video} alt="video" style={{
+            maxHeight: '100%',
+            maxWidth: '100%',
+            width: 'auto',
+            height: 'auto',
+            borderRadius: '2rem',
+          }} />
+        </div>
+      </div>
+
     </header>
   );
 };

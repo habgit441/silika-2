@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa'; // Correct import for Font Awesome icons
-
+import silika from '../Asset/Images/silika.svg'; // Import your silika logo image here
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -10,7 +10,9 @@ const Navbar = () => {
 
     return (
         <header className="navbar">
-            <div className="logo">Silika</div>
+            <div className="logo">
+                <img src={silika} alt="Silika logo" />
+            </div>
             <div className="menu-toggle" onClick={toggleNavbar}>
                 {isOpen ? <FaTimes /> : <FaBars />}
             </div>

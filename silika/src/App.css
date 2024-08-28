@@ -1,3 +1,6 @@
+*{
+  font-family: initial;
+}
 .App {
   font-family: 'Arial', sans-serif;
   text-align: center;
@@ -58,7 +61,8 @@ button {
   font-size: 24px;
   cursor: pointer;
 }
-.img{
+
+.img {
   height: 10rem;
   width: 10rem;
   border: 1px solid yellow;
@@ -77,6 +81,47 @@ button {
 .nav-item {
   color: white;
   cursor: pointer;
+}
+
+.feature {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  position: relative;
+}
+
+.scrolling-images {
+  display: inline-block;
+  white-space: nowrap;
+  width: calc(200%);
+  /* Double the width to enable seamless scrolling */
+  animation: scroll 20s linear infinite;
+}
+
+.scrolling-images img {
+  display: inline-block;
+  margin-right: 20px;
+  /* Adjust the gap here */
+  height: 50px;
+  /* Adjust height as needed */
+}
+
+.abouttext {
+  font-size: 1.2rem;
+  margin: 1rem 3rem;
+}
+.abouttext h1 {
+  margin-bottom: 0.5rem;
+}
+/* Keyframes for smooth scrolling */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 @media (max-width: 768px) {
@@ -102,6 +147,9 @@ button {
 
   .get-started-button {
     display: none !important;
+  }
+  .About{
+    display: ;
   }
 }
 
@@ -130,20 +178,32 @@ button {
 .feature {
   padding: 60px 0;
   background: #f7f7f7;
-  border: 1px solid black;
 }
 
-.About{
+.About {
   text-align: center;
-  margin: 3rem 20rem ;
-  width: 41rem;
+  margin: 3rem 2rem;
+  flex-direction: column;
   flex-wrap: nowrap;
-  border: 1px solid red;
+  box-shadow: #F1F1F1;
 }
-.About-text{
+
+.silika {
+  display: flex;
+  text-align: center;
+}
+
+.About-text {
   font-size: 1rem;
   width: 50%;
   border: 1px solid red;
+  display: flex;
+}
+
+.feature {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
 }
 
 /* feature ends here */

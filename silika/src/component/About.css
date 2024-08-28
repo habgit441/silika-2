@@ -1,0 +1,76 @@
+    /* About.css */
+
+.about {
+    padding: 1rem;
+  }
+  
+  .us {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .us h1 {
+    font-size: 1.5rem;
+  }
+  
+  .silika {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .abouttext {
+    margin-bottom: 1rem;
+  }
+  
+  .abouttext h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .abouttext p {
+    font-size: 1rem;
+  }
+  
+  .video-container {
+    width: 100%;
+    max-width: 500px; /* Adjust based on your design */
+    margin: 0 auto;
+  }
+  
+  .video-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 2rem;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .abouttext h2 {
+      font-size: 1rem;
+    }
+  
+    .abouttext p {
+      font-size: 0.875rem;
+    }
+    
+    .video-container {
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .abouttext h2 {
+      font-size: 0.875rem;
+    }
+  
+    .abouttext p {
+      font-size: 0.75rem;
+    }
+  
+    .us h1 {
+      font-size: 1.25rem;
+    }
+  }
+  
